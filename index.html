@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fullstack Application</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <main>
+      <div class="header">
+        <div class="sub-header1"><h2>
+          Basic Fullstack application with Vanilla.js, Node.js, Express.js and MySQL
+        </h2></div>
+        <div class="sub-header2">
+        <h4>The purpose of this application is: </h4>
+          <li>to understand client/server side relation</li> 
+          <li>to connect to database and make queries in database</li>
+          <li>to learn CRUD (create-read-update-delete) methods in server side</li>
+          <li>to exercise fetch() api to make request in client side</li>
+          <li>to understand exchanging data between frontend and backend</li>
+          <li>to provide a simple but also comprehensive example for backend beginners</li>
+        
+      </div>
+      </div>
+      <div class="container">
+        <div class="common">
+          <h3>Create a new data</h3>
+          <form action="">
+            <label for="username">Username:</label><br />
+            <input
+              type="text"
+              id="usernameCreate"
+              name="username"
+            /><br />
+            <label for="pwd">Password:</label><br />
+            <input
+              type="password"
+              id="passwordCreate"
+              name="password"
+            /><br />
+            <label for="passwordConfirm">Confirm Password:</label><br />
+            <input
+              type="password"
+              id="passwordConfirm"
+              name="passwordConfirm"
+            /><br />
+            <label for="birthday">Birthday:</label><br />
+            <input
+              type="text"
+              id="birthdayCreate"
+              name="birthday"
+              placeholder="12/02/1996"
+            /><br /><br />
+            <input type="submit" id="submitBtn" value="Send" />
+            <p id="invalidEntryRegister"></p>
+          </form>
+        </div>
+        <div class="common">
+          <h3>Read a data from database</h3>
+          <form action="">
+            <label for="search">Search Birthday of User:</label><br /><br />
+            <label for="search">Username:</label><br />
+            <input
+              type="text"
+              id="search"
+              name="search"
+              placeholder="Enter correct username"
+            /><br /><br />
+            <input type="button" id="searchBtn" value="Search" />
+            <p id="searchResult"></p>
+          </form>
+        </div>
+        <div class="common">
+          <h3>Update the data in database</h3>
+          <form action="">
+            <label for="usernameUpdate">Username:</label><br />
+            <input
+              type="text"
+              id="usernameUpdate"
+              name="usernameUpdate"
+              placeholder="Enter correct username"
+            /><br />
+            <label for="passwordUpdate">Password:</label><br />
+            <input
+              type="password"
+              id="passwordUpdate"
+              name="passwordUpdate"
+            /><br />
+            <label for="passwordConfirm2">Confirm Password:</label><br />
+            <input
+              type="password"
+              id="passwordConfirm2"
+              name="passwordConfirm2"
+            /><br />
+            <label for="birthdayUpdate">Birthday:</label><br />
+            <input
+              type="text"
+              id="birthdayUpdate"
+              name="birthdayUpdate"
+              placeholder="12/02/1996"
+            /><br /><br />
+            <input type="submit" id="updateBtn" value="Update" />
+            <p id="updateResult"></p>
+          </form>
+        </div>
+        <div class="common">
+          <h3>Delete data from database</h3>
+          <form action="">
+            <label for="delete">Delete:</label><br />
+            <input
+              type="text"
+              id="deleteInput"
+              name="delete"
+              placeholder="Enter correct username"
+            /><br /><br />
+            <input type="button" id="deleteBtn" value="Delete" />
+            <p id="deleteResult"></p>
+          </form>
+        </div>
+      </div>
+      <div class="showAll">
+        <h3>Read all data from database</h3>
+        <form action="">
+            <input type="button" id="shoAllBtn" value="Show All" />
+            <p id="showAllResult"></p>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

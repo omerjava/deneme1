@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sub-header2 {
+  margin-left: 90px;
+  text-align: left;
+}
+
+main {
+  width: 90%;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.common {
+  margin: 30px;
+  padding: 20px;
+  border: black solid 1px;
+}
+
+.showAll {
+  border: black solid 1px;
+  padding: 10px;
+}
+
+.outer {
+  background: rgb(32, 53, 56);
+  margin: 5px;
+  padding: 5px;
+}
+
+.inner {
+  background: rgb(247, 213, 145);
+  margin: 20px;
+  padding: 10px;
+}
+
+.displayScreen {
+  min-width: 60px;
+  min-height: 50px;
+  border: 1px solid black;
+}
